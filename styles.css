@@ -17,6 +17,8 @@
     display: flex;
     justify-content: space-between;
     margin: 70px 70px;
+    gap: 30px;
+    align-items: flex-start;
 }
 
 .textes {
@@ -26,11 +28,11 @@
 
 .element {
     border: 1px solid black;
+    width: 30%;
 }
 
-.center {
-    margin-right: 30px;
-    margin-left: 30px;
+img {
+    width: 100%;
 }
 
 .tittle {
@@ -47,4 +49,23 @@ footer {
 
 h2 {
     font-weight: 400;
+
 }
+
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .textes {
+      font-size: 0.9rem;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .element {
+        border: 1px solid black;
+        width: 100%;
+    }
+
+  }
+  
